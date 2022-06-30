@@ -151,7 +151,6 @@ id serial primary key,
 role_name int  not null unique
 );
  
-
 alter table roles_1
 alter column role_name type varchar(30)  using (role_name::varchar(30));
 
