@@ -76,7 +76,6 @@ where id='110';
   select min(id) from students
  --29. Вывести максимальный.
  select max(id) from students
- 
  --30. Вывести количество пользователей
  select count(name)
  from students
