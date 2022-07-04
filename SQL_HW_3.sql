@@ -45,24 +45,24 @@ on re.role_id=r1.id
 where r1.role_name like '%Java%';
 
 select e.employee_name, r1.role_name 
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id
 join roles_1 r1
 on re.role_id=r1.id
 where r1.role_name like '%Python%';
 
 select e.employee_name, r1.role_name 
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id
 join roles_1 r1
 on re.role_id=r1.id
 where r1.role_name like '%QA%';
 
 select e.employee_name, r1.role_name 
- from employees e
- join roles_employee re on e.id=re.employee_id
+from employees e
+join roles_employee re on e.id=re.employee_id
 join roles_1 r1 on re.role_id=r1.id
 where r1.role_name like '%Manual_QA_%';
 
