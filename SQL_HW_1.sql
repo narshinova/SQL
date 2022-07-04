@@ -37,26 +37,26 @@ where created_on='2021-07-12 00:00:00' and password='1m313';
    select * from students
 where created_on='2021-07-12 00:00:00' and name like '%Andrey%';
  --16. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
-   select * from students
+  select * from students
 where created_on='2021-07-12 00:00:00' and name like'%8%';
  --17. Вывести пользователя у которых id равен 110
-   select * from students
+  select * from students
 where id='110';
  --18. Вывести пользователя у которых id равен 153
  select * from students
- where id='153';
+where id='153';
  --19. Вывести пользователя у которых id больше 140
- select * from students
- where id>'140';
+  select * from students
+where id>'140';
  --20. Вывести пользователя у которых id меньше 130
   select * from students
- where id<'130';
+where id<'130';
  --21. Вывести пользователя у которых id меньше 127 или больше 188
   select * from students
- where id<'153' or id>'188';
+where id<'153' or id>'188';
  --22. Вывести пользователя у которых id меньше либо равно 137
   select * from students
- where id<='137';
+where id<='137';
  --23. Вывести пользователя у которых id больше либо равно 137
    select * from students
  where id>='137';
