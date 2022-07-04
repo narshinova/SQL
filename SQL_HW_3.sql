@@ -11,8 +11,7 @@ join salary s
 on em.salary_id=s.id
 where s.monthly_salary<2000;
 
-select*
-from employee_salary em;
+select*from employee_salary em;
 
 select em.employee_id, s.monthly_salary 
 from employees e
