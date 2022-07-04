@@ -32,13 +32,13 @@ where employee_name is null
 and s.monthly_salary<2000;
 
 select e.employee_name, re.role_id  
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id;
 
 select e.employee_name, r1.role_name 
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id
 join roles_1 r1
 on re.role_id=r1.id
@@ -67,16 +67,16 @@ join roles_1 r1 on re.role_id=r1.id
 where r1.role_name like '%Manual_QA_%';
 
 select e.employee_name, r1.role_name 
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id
 join roles_1 r1
 on re.role_id=r1.id
 where r1.role_name like '%Automation_QA_%';
 
 select e.employee_name, r1.role_name 
- from employees e 
- join roles_employee re
+from employees e 
+join roles_employee re
 on e.id=re.employee_id
 join roles_1 r1
 on re.role_id=r1.id
