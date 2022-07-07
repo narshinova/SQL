@@ -245,14 +245,14 @@ select  r.role_name, s.monthly_salary
 from roles_employee re join roles_1 r  on re.role_id=r.id
 join employee_salary es on re.employee_id=es.employee_id 
 join salary s on s.id=es.salary_id
-where s.monthly_salary between 1700 and 2300
+where s.monthly_salary between 1700 and 2500
 order by r.role_name;
 
 select  r.role_name, s.monthly_salary 
 from roles_employee re join roles_1 r  on re.role_id=r.id
 join employee_salary es on re.employee_id=es.employee_id 
 join salary s on s.id=es.salary_id
-where s.monthly_salary <2300
+where s.monthly_salary <2500
 order by r.role_name;
 
 select  r.role_name, s.monthly_salary 
