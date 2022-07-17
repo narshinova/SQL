@@ -10,15 +10,15 @@ select name from students;
 select email from students;
 --6.Вывести только имя и email пользователей
 select name,email from students;
- --7. Вывести id, имя, email и дату создания пользователей
+--7.Вывести id, имя, email и дату создания пользователей
  select id,name,email from students;
--- 8. Вывести пользователей где password 12333
+--8.Вывести пользователей где password 12333
 select * from students
 where password='12333';
- --9. Вывести пользователей которые были созданы 2021-03-26 00:00:00
+--9.Вывести пользователей которые были созданы 2021-03-26 00:00:00
  select * from students
 where created_on='2021-03-26 00:00:00';
- --10. Вывести пользователей где в имени есть слово Анна
+--10.Вывести пользователей где в имени есть слово Анна
  select * from students
 where name like '%Anna%';
  --11. Вывести пользователей где в имени в конце есть 8
