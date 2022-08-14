@@ -28,10 +28,10 @@ where name like '%8';
    select * from students
 where name like '%a%';
 --13. Вывести пользователей которые были созданы 2021-07-12 00:00:00
-   select * from students
+  select * from students
 where created_on='2022-07-12 00:00:00';
 --14. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313
-    select * from students
+   select * from students
 where created_on='2022-07-12 00:00:00' and password='1m313';
 --15. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
    select * from students
@@ -70,7 +70,7 @@ where id<='137';
    select * from students
    where password in ('12333', '1m313', '123313');
 --27. Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00
-   select * from students
+  select * from students
    where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 --28. Вывести минимальный id 
   select min(id) from students
